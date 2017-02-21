@@ -7,7 +7,7 @@ const Boom = require('boom')
 // Log ops info very rarely when running locally. Time is in milliseconds.
 const monitoringInterval = process.env['ENV'] === 'prod' ? 60 * 1000 : 60 * 60 * 1000
 
-module.exports = function (log, User) {
+module.exports = function (log) {
 
   // bring your own validation function
   const validate = function* (decoded, request, callback) {
@@ -16,18 +16,7 @@ module.exports = function (log, User) {
       uri: request.url.path
     })
     // do your checks to see if the person is valid
-    if (!decoded.id) {
-      return callback(null, false)
-    }
-    else {
-      const user = yield User.findOne({_id: decoded.id}).exec()
-      if (!user) {
-        return callback(null, false)
-      } else if (user && !user.loggedIn) {
-        return callback(Boom.unauthorized('Token expired'), false)
-      }
-      return callback(null, true)
-    }
+    return callback(null, true)
   };
 
   const Hapi = require('hapi');
@@ -73,7 +62,7 @@ module.exports = function (log, User) {
     ])
 
     server.auth.strategy('jwt', 'jwt', true, {
-      key: secret,
+      key: 'secret', // Replace with your own
       validateFunc: co.wrap(validate),
       verifyOptions: {
         algorithms: [ 'HS256' ]

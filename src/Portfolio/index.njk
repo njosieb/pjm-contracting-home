@@ -1,0 +1,12 @@
+{% extends '_layouts/base.njk' %}
+
+{% block content %}
+<div class="main-container">
+  {% include "_layouts/header.njk" %}
+  {% include "_layouts/nav.njk" %}
+  <main class="portfolio-main">
+    {% include "_layouts/portfolio.njk" %}
+    {% include "_layouts/footer.njk" %}
+  </main>
+</div>
+{% endblock %}

@@ -1,23 +1,17 @@
-<div class="site-header">
-  <div class="header-wrapper">
-    <div class="site-title">
-      <a href="/" class="menu-item">
-        <h1>PJM Contracting LLC</h1>
-      <small><em>For All Your Home & Remodel Needs</em></small>
-    </a>
-    </div>
-    <div class="menu">
-      {% for item in site.data.menu %}
-      <a title="<$  item.description  $>" href="<$  item.route  $>" class="menu-item">
-        <$  item.label  $>
-      </a>
-      {% endfor %}
-    </div>
-    <div id="menu-reveal" class="menu-button-container right">
-      Menu&nbsp;<i class="fa fa-bars"></i>
-    </div>
-  </div>
-</div>
 <div class="portfolio-main">
   <h1>PJM Portfolio</h1>
+</div>
+
+<div class="portfolio-container flex flex-wrap">
+  {% for project in site.data.portfolio %}
+    <div class="project">
+      <h3 class="project-title">{{ project.title }}</h3>
+      <div class="project-date">{{ project.date }}</div>
+      <div class="image-container">
+        <img src="{{ project.image }}" />
+      </div>
+    </div>
+    {% else %}
+    <div>There are no projects!</div>
+  {% endfor %}
 </div>

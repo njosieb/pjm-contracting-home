@@ -71,6 +71,7 @@
     "rimraf": "2.5.0",
     "storj": "^4.0.1",
     "sugar": "2.0.4",
+    "tachyons": "^4.6.2",
     "url": "0.11.0",
     "vinyl-buffer": "1.0.0",
     "vinyl-source-stream": "1.1.0",

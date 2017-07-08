@@ -5,6 +5,7 @@
 
 import $ from 'jquery';
 import 'waypoints';
+import 'lightbox';
 
 $(() => {
   const jWindow = $(window);

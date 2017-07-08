@@ -1,12 +1,26 @@
 ---
-- title: 'Title'
+- title: 'Fendler'
   date: '2017-07-07'
+  tags:
+    - "Kitchen"
+    - "Residential"
   image: '/images/portfolio/0L0A9913_FINAL.jpg'
+  slideshow:
+    - slideUrl: '/image/portfolio/0L0A9913_FINAL.jpg'
+      slideCaption: 'Ooo nice kitchen!'
+    - slideUrl: '/image/portfolio/0L0A9913_FINAL.jpg'
+      slideCaption: 'Ooo nice kitchen!'
+    - slideUrl: '/image/portfolio/0L0A9913_FINAL.jpg'
+      slideCaption: 'Ooo nice kitchen!'
+    - slideUrl: '/image/portfolio/0L0A9913_FINAL.jpg'
+      slideCaption: 'Ooo nice kitchen!'
 
 - title: 'Title2'
   date: '2017-07-07'
+  tags:
   image: '/images/portfolio/Klapmeyer_07.jpg'
 
 - title: 'Title3'
   date: '2017-07-07'
+  tags: 
   image: '/images/portfolio/MooreHomesMay_interior1_final.jpg'

@@ -7,8 +7,15 @@
     <div class="project">
       <h3 class="project-title">{{ project.title }}</h3>
       <div class="project-date">{{ project.date }}</div>
+      <div class="tags">
+        {% for tag in project.tags %}
+        <span>{{ tag }}</span>
+        {% endfor %}
+      </div>
       <div class="image-container">
-        <img src="{{ project.image }}" />
+        <a href="{{ project.image }}" data-lightbox="portfolio">
+          <img src="{{ project.image }}" />
+        </a>
       </div>
     </div>
     {% else %}

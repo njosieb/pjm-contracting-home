@@ -35,4 +35,8 @@ $(() => {
     //   topSection.find('.parallax-image').css('transform', `translate3d(0, ${jWindow.scrollTop() * -.3}px, 0)`)
     // })
   }
+
+  // lightbox.option({
+  //   'wrapAround': true
+  // })
 });

@@ -88,12 +88,13 @@
   }
 }
 
-body  {
-  color: #cd2026;
-}
-
-.site-slogan {
+#site-slogan {
   text-align: center;
+
+  h3{
+    text-shadow: 1px 1px @blue-darker, 1px -1px @blue-darker, -1px -1px @blue-darker, -1px 1px @blue-darker;
+  }
+
 }
 
 .action-button {
@@ -151,4 +152,12 @@ body  {
 
 .child-4 {
   flex-grow: 2;
+}
+
+#logo-background {
+  display: block;
+  margin: 0 auto;
+  background: rgba(255,255,255,.9);
+  padding: 2rem 3.5rem;
+  max-height: 250px;
 }

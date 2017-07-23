@@ -1,24 +1,26 @@
 <div class="portfolio-main">
-  <h1>PJM Portfolio</h1>
-</div>
+  <div class="portfolio-header">
+    <h1>Portfolio</h1>
+  </div>
+  <div class="portfolio-container flex flex-wrap">
 
-<div class="portfolio-container flex flex-wrap">
-  {% for project in site.data.portfolio %}
-    <div class="project">
-      <h3 class="project-title tc ma2">{{ project.title }}</h3>
-      <div class="project-date tc">{{ project.date }}</div>
-      <div class="tags tc">
-        {% for tag in project.tags %}
-        <span>{{ tag }}</span>
-        {% endfor %}
+    {% for project in site.data.portfolio %}
+      <div class="project">
+        <h3 class="project-title tc ma2">{{ project.title }}</h3>
+        <div class="project-date tc">{{ project.date }}</div>
+        <div class="tags tc">
+          {% for tag in project.tags %}
+          <span>{{ tag }}</span>
+          {% endfor %}
+        </div>
+        <div class="image-container">
+          <a href="{{ project.image }}" data-lightbox="portfolio">
+            <img src="{{ project.image }}" />
+          </a>
+        </div>
       </div>
-      <div class="image-container">
-        <a href="{{ project.image }}" data-lightbox="portfolio">
-          <img src="{{ project.image }}" />
-        </a>
-      </div>
-    </div>
-    {% else %}
-    <div>Projects Coming Soon!!</div>
-  {% endfor %}
+      {% else %}
+      <div>Projects Coming Soon!!</div>
+    {% endfor %}
+  </div>
 </div>

@@ -5,47 +5,47 @@
     - 'Interior'
     - 'Bath'
     - 'Residential'
-  image: '/image/portfolio/bradford/bradford_2.jpg'
+  image: '/images/portfolio/bradford/bradford_2.jpg'
   slideshow:
-    - slideUrl: '/image/portfolio/bradford/bradford_1.jpg'
+    - slideUrl: '/images/portfolio/bradford/bradford_1.jpg'
       slideCaption:
-    - slideUrl: '/image/portfolio/bradford/bradford_2.jpg'
+    - slideUrl: '/images/portfolio/bradford/bradford_2.jpg'
       slideCaption:
-    - slideUrl: '/image/portfolio/bradford/bradford_3.jpg'
+    - slideUrl: '/images/portfolio/bradford/bradford_3.jpg'
       slideCaption:
-    - slideUrl: '/image/portfolio/bradford/bradford_4.jpg'
+    - slideUrl: '/images/portfolio/bradford/bradford_4.jpg'
       slideCaption:
-    - slideUrl: '/image/portfolio/bradford/bradford_5.jpg'
+    - slideUrl: '/images/portfolio/bradford/bradford_5.jpg'
       slideCaption:
 
-- title: 'Bradly Gilmore'
+- title: 'Brady Gilmore'
   date: '2017-07-07'
   tags:
     - 'Interior'
     - 'Kitchen'
     - 'Bath'
     - 'Residential'
-  image: '/image/portfolio/bradley_gilmore/bradley_gilmore_8.jpg'
+  image: '/images/portfolio/brady_gilmore/brady_gilmore_1.jpg'
   slideshow:
-    - slideUrl: '/image/portfolio/bradley_gilmore/bradley_gilmore_1.jpg'
+    - slideUrl: '/images/portfolio/brady_gilmore/brady_gilmore_1.jpg'
       slideCaption:
-    - slideUrl: '/image/portfolio/bradley_gilmore/bradley_gilmore_2.jpg'
+    - slideUrl: '/images/portfolio/brady_gilmore/brady_gilmore_2.jpg'
       slideCaption:
-    - slideUrl: '/image/portfolio/bradley_gilmore/bradley_gilmore_3.jpg'
+    - slideUrl: '/images/portfolio/brady_gilmore/brady_gilmore_3.jpg'
       slideCaption:
-    - slideUrl: '/image/portfolio/bradley_gilmore/bradley_gilmore_4.jpg'
+    - slideUrl: '/images/portfolio/brady_gilmore/brady_gilmore_4.jpg'
       slideCaption:
-    - slideUrl: '/image/portfolio/bradley_gilmore/bradley_gilmore_5.jpg'
+    - slideUrl: '/images/portfolio/brady_gilmore/brady_gilmore_5.jpg'
       slideCaption:
-    - slideUrl: '/image/portfolio/bradley_gilmore/bradley_gilmore_6.jpg'
+    - slideUrl: '/images/portfolio/brady_gilmore/brady_gilmore_6.jpg'
       slideCaption:
-    - slideUrl: '/image/portfolio/bradley_gilmore/bradley_gilmore_7.jpg'
+    - slideUrl: '/images/portfolio/brady_gilmore/brady_gilmore_7.jpg'
       slideCaption:
-    - slideUrl: '/image/portfolio/bradley_gilmore/bradley_gilmore_8.jpg'
+    - slideUrl: '/images/portfolio/brady_gilmore/brady_gilmore_8.jpg'
       slideCaption:
-    - slideUrl: '/image/portfolio/bradley_gilmore/bradley_gilmore_9.jpg'
+    - slideUrl: '/images/portfolio/brady_gilmore/brady_gilmore_9.jpg'
       slideCaption:
-    - slideUrl: '/image/portfolio/bradley_gilmore/bradley_gilmore_10.jpg'
+    - slideUrl: '/images/portfolio/brady_gilmore/brady_gilmore_10.jpg'
       slideCaption:
 
 - title: 'Dandoy'
@@ -54,17 +54,17 @@
     - 'Interior'
     - 'Kitchen'
     - 'Residential'
-  image: '/image/portfolio/dandoy_kitchen/dandoy_kitchen_1.jpg'
+  image: '/images/portfolio/dandoy_kitchen/dandoy_kitchen_1.jpg'
   slideshow:
-    - slideUrl: '/image/portfolio/dandoy_kitchen/dandoy_kitchen_1.jpg'
+    - slideUrl: '/images/portfolio/dandoy_kitchen/dandoy_kitchen_1.jpg'
       slideCaption:
-    - slideUrl: '/image/portfolio/dandoy_kitchen/dandoy_kitchen_2.jpg'
+    - slideUrl: '/images/portfolio/dandoy_kitchen/dandoy_kitchen_2.jpg'
       slideCaption:
-    - slideUrl: '/image/portfolio/dandoy_kitchen/dandoy_kitchen_3.jpg'
+    - slideUrl: '/images/portfolio/dandoy_kitchen/dandoy_kitchen_3.jpg'
       slideCaption:
-    - slideUrl: '/image/portfolio/dandoy_kitchen/dandoy_kitchen_4.jpg'
+    - slideUrl: '/images/portfolio/dandoy_kitchen/dandoy_kitchen_4.jpg'
       slideCaption:
-    - slideUrl: '/image/portfolio/dandoy_kitchen/dandoy_kitchen_5.jpg'
+    - slideUrl: '/images/portfolio/dandoy_kitchen/dandoy_kitchen_5.jpg'
       slideCaption:
 
 - title: 'Fendler'
@@ -76,19 +76,19 @@
     - 'Residential'
   image: '/images/portfolio/fendler/fendler_4.jpg'
   slideshow:
-    - slideUrl: '/image/portfolio/fendler/fendler_1.jpg'
+    - slideUrl: '/images/portfolio/fendler/fendler_1.jpg'
       slideCaption: 'Ooo nice kitchen!'
-    - slideUrl: '/image/portfolio/fendler/fendler_2'
+    - slideUrl: '/images/portfolio/fendler/fendler_2'
       slideCaption: '  '
-    - slideUrl: '/image/portfolio/fendler/fendler_3'
+    - slideUrl: '/images/portfolio/fendler/fendler_3'
       slideCaption: '  '
-    - slideUrl: '/image/portfolio/fendler/fendler_4'
+    - slideUrl: '/images/portfolio/fendler/fendler_4'
       slideCaption: '  '
-    - slideUrl: '/image/portfolio/fendler/fendler_5'
+    - slideUrl: '/images/portfolio/fendler/fendler_5'
       slideCaption: '  '
-    - slideUrl: '/image/portfolio/fendler/fendler_6'
+    - slideUrl: '/images/portfolio/fendler/fendler_6'
       slideCaption: '  '
-    - slideUrl: '/image/portfolio/fendler/fendler_7'
+    - slideUrl: '/images/portfolio/fendler/fendler_7'
       slideCaption: '  '
 
 - title: 'Gina Anderson'

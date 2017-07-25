@@ -3,8 +3,8 @@
   <div class="menu-section">
 
     {% for section in site.data.menu %}
-      <a href="<$ section.route $>" class="section-link">
-        <$ section.label $>
+      <a href="{{ section.route }}" class="section-link">
+        {{ section.label }}
       </a>
     {% endfor %}
     <div id="top-splash" class="transparent-section">

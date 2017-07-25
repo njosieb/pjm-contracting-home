@@ -5,6 +5,7 @@
 
 import $ from 'jquery';
 import 'waypoints';
+import 'lightbox';
 
 $(() => {
   const jWindow = $(window);
@@ -34,4 +35,21 @@ $(() => {
     //   topSection.find('.parallax-image').css('transform', `translate3d(0, ${jWindow.scrollTop() * -.3}px, 0)`)
     // })
   }
+
+  // lightbox.option({
+  //   'wrapAround': true
+  // })
+
+
+  // Modal functionality starts here
+
+  $('.portfolio-container .project-title-text, .portfolio-container .image-container').click(function(){
+    var id = $(this).parents('.project').attr('id')
+    $('#modal-' + id).show()
+  })
+
+  $('.modal-overlay').click(function(){
+    $('.modal-container').hide()
+  })
+
 });

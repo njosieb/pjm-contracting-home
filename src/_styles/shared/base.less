@@ -20,10 +20,10 @@ body {
   font-family: @base-font-family;
   line-height: @base-line-height;
   font-weight: 300;
-  color: @black;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased !important;
 	-moz-osx-font-smoothing: grayscale;
+  background-color: @green-color;
 }
 
 /**
@@ -31,7 +31,6 @@ body {
  */
 img {
   height: auto;
-  max-width: 100%;
 }
 
 /**
@@ -71,11 +70,11 @@ li {
  * Links
  */
 a {
-  color: @focus-color;
+  color: @green-lightest;
   text-decoration: none;
 
   &:hover {
-    color: @blue-alt-darker;
+  //  color: @blue-alt-darker;
     text-decoration: none;
   }
 }
@@ -177,7 +176,7 @@ p, a:not(.photo), li, blockquote {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 2;
-  margin: 0 0 1em 0;
+  margin: 0;
 }
 
 h1 {

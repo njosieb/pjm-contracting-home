@@ -1,22 +1,22 @@
 <div class="portfolio-main">
   <div class="portfolio-header">
-    <h1>Portfolio</h1>
+    <h1 class="white">Portfolio</h1>
   </div>
-  <div class="portfolio-container flex flex-wrap">
+  <div class="portfolio-container flex flex-wrap justify-center white pb4 pt4">
 
     {% for project in site.data.portfolio %}
-      <div class="project">
-        <h3 class="project-title tc ma2">{{ project.title }}</h3>
+      <div id="{{ project.id }}" class="project">
+        <h3 class="project-title tc pt3 underline-hover">
+          <span class="project-title-text">{{ project.title }}</span>
+        </h3>
         <div class="project-date tc">{{ project.date }}</div>
         <div class="tags tc">
           {% for tag in project.tags %}
           <span>{{ tag }}</span>
           {% endfor %}
         </div>
-        <div class="image-container">
-          <a href="{{ project.image }}" data-lightbox="portfolio">
-            <img src="{{ project.image }}" />
-          </a>
+        <div class="image-container center dim">
+          <img src="{{ project.image }}" />
         </div>
       </div>
       {% else %}

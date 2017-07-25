@@ -1,5 +1,6 @@
 ---
 - title: 'Bradford'
+  id: 'bradford'
   date: '2017-07-07'
   tags:
     - 'Interior'
@@ -19,6 +20,7 @@
       slideCaption:
 
 - title: 'Brady Gilmore'
+  id: 'gilmore'
   date: '2017-07-07'
   tags:
     - 'Interior'
@@ -49,6 +51,7 @@
       slideCaption:
 
 - title: 'Dandoy'
+  id: 'dandoy'
   date: '2017-07-07'
   tags:
     - 'Interior'
@@ -68,6 +71,7 @@
       slideCaption:
 
 - title: 'Fendler'
+  id: 'fendler'
   date: '2017-07-07'
   tags:
     - 'Interior'
@@ -92,6 +96,7 @@
       slideCaption: '  '
 
 - title: 'Gina Anderson'
+  id: 'anderson'
   date: '2017-07-07'
   tags:
     - 'Interior'
@@ -124,6 +129,7 @@
       slideCaption:
 
 - title: 'Hutchinson'
+  id: 'hutchinson'
   date: '2017-07-07'
   tags:
     - 'Interior'
@@ -146,6 +152,7 @@
       slideCaption:
 
 - title: 'Klapmeyer'
+  id: 'klapmeyer'
   date: '2017-07-07'
   tags:
     - 'Exterior'
@@ -169,6 +176,7 @@
       slideCaption:
 
 - title: 'Mach'
+  id: 'mach'
   date: '2017-07-07'
   tags:
     - 'Exterior'
@@ -190,6 +198,7 @@
       slideCaption:
 
 - title: 'Mitchell'
+  id: 'mitchell'
   date: '2017-07-07'
   tags:
     - 'Interior'
@@ -215,6 +224,7 @@
       slideCaption:
 
 - title: 'MK OMalley'
+  id: 'omalley'
   date: '2017-07-07'
   tags:
     - 'Interior'
@@ -232,6 +242,7 @@
       slideCaption:
 
 - title: 'Painter'
+  id: 'painter'
   date: '2017-07-07'
   tags:
     - 'Interior'
@@ -253,6 +264,7 @@
       slideCaption:
 
 - title: 'Peete'
+  id: 'peete'
   date: '2017-07-07'
   tags:
     - 'Interior'
@@ -270,6 +282,7 @@
       slideCaption:
 
 - title: 'Sokoloff'
+  id: 'sokoloff'
   date: '2017-07-07'
   tags:
     - 'Interior'
@@ -289,6 +302,7 @@
       slideCaption:
 
 - title: 'Teahan'
+  id: 'teahan'
   date: '2017-07-07'
   tags:
     - 'Interior'
@@ -313,6 +327,7 @@
       slideCaption:
 
 - title: 'Walters'
+  id: 'walters'
   date: '2017-07-07'
   tags:
     - 'Interior'

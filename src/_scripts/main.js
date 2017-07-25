@@ -39,4 +39,17 @@ $(() => {
   // lightbox.option({
   //   'wrapAround': true
   // })
+
+
+  // Modal functionality starts here
+
+  $('.portfolio-container .project-title-text, .portfolio-container .image-container').click(function(){
+    var id = $(this).parents('.project').attr('id')
+    $('#modal-' + id).show()
+  })
+
+  $('.modal-overlay').click(function(){
+    $('.modal-container').hide()
+  })
+
 });

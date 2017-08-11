@@ -1,18 +1,23 @@
-.green {
-  color: @green-color;
-}
-.bg-green {
-  background-color: @green-color;
+.tachyons-override (@class, @color) {
+  .@{class} { color: @color; }
+  .bg-@{class} { background-color: @color; }
+  .hover-@{class} {
+    &:hover,
+    &:focus {
+      color: @color;
+    }
+  }
+  .hover-bg-@{class} {
+    &:hover,
+    &:focus {
+      background-color: @color;
+    }
+  }
+  .b--@{class} { border-color: @color; }
 }
 
-.green-light {
-  color: @green-light;
-}
-
-.bg-green-light {
-  background-color: @green-light;
-}
-
-.blue {
-  color: @blue-darker;
-}
+.tachyons-override(~"green", @green-color);
+.tachyons-override(~"green-light", @green-light);
+.tachyons-override(~"blue", @blue-primary);
+.tachyons-override(~"black", @black);
+.tachyons-override(~"off-black", @offBlack);

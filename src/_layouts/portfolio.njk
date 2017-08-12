@@ -5,7 +5,7 @@
   <div class="portfolio-container flex flex-wrap justify-center pb4 pt4">
 
     {% for project in site.data.portfolio %}
-      <div id="{{ project.id }}" class="project pointer relative mb4 mh4">
+      <div id="{{ project.id }}" class="project pointer relative mb4 mh4 {{ project.tags | string | replace(',', ' ') | lower }}">
         <div class="project-info absolute w-100">
           <h3 class="project-title tc pt3 ma0 flex items-center justify-center">
             <span class="project-title-text blue-darker underline-hover lh-copy">{{ project.title }}</span>
@@ -13,7 +13,7 @@
           </h3>
           <div class="tags tc pb2">
             {% for tag in project.tags %}
-              <span data-tagname="{{ tag | lower }}" class="filter-tag blue-darker underline-hover">{{ tag }}</span>{% if not loop.last %}<span>, </span>{% endif %}
+              <a href="/portfolio#{{tag | lower}}" data-tagname="{{ tag | lower }}" class="filter-tag blue-darker underline-hover">{{ tag }}</a>{% if not loop.last %}<span>, </span>{% endif %}
             {% endfor %}
           </div>
         </div>

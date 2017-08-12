@@ -51,4 +51,24 @@ $(() => {
     $('.modal-container').hide()
   })
 
+
+  // Filtering portfolio
+  $(document).ready(function() {
+    if (window.location.pathname === '/portfolio/') {
+      filterProjects(window.location.hash.substring(1))
+    }
+  })
+
+  $('.filter-tag').click(function(event) {
+    event.preventDefault()
+    const filteringTag = $(this).data('tagname')
+    window.location.hash = `#${filteringTag}`
+    filterProjects($(this).data('tagname'))
+  })
+
+  const filterProjects = function (clicked) {
+    $('.project').hide()
+    $('.project').filter(`.${clicked}`).show()
+  }
+
 });

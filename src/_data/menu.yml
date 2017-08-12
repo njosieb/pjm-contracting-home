@@ -7,7 +7,7 @@
   route: '/#about-us'
   description: 'About Us button'
 
-- label: 'Residential'
+- label: 'What I Do'
   route: '/#work'
   description: 'Residential button'
 

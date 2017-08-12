@@ -4,7 +4,6 @@
 'use strict';
 
 import $ from 'jquery';
-import 'waypoints';
 import 'lightbox';
 
 $(() => {
@@ -29,11 +28,11 @@ $(() => {
   });
 
   if (window.location.pathname === '/' && jWindow.width() >= 600) {
-    // const topSection = $('#top-splash')
+    const topSection = $('#top-splash')
 
-    // jWindow.on('scroll', () => {
-    //   topSection.find('.parallax-image').css('transform', `translate3d(0, ${jWindow.scrollTop() * -.3}px, 0)`)
-    // })
+    jWindow.on('scroll', function() {
+      topSection.find('.parallax-image').css('transform', `translate3d(0, ${jWindow.scrollTop() * -.3}px, 0)`)
+    })
   }
 
   // lightbox.option({

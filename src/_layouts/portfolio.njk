@@ -1,22 +1,24 @@
 <div class="portfolio-main">
-  <div class="portfolio-header">
-    <h1 class="white">Portfolio</h1>
+  <div class="portfolio-header pt6 pb5">
+    <h1 class="mw7 f-5 center white mv0">Portfolio</h1>
   </div>
-  <div class="portfolio-container flex flex-wrap justify-center white pb4 pt4">
+  <div class="portfolio-container flex flex-wrap justify-center pb4 pt4">
 
     {% for project in site.data.portfolio %}
-      <div id="{{ project.id }}" class="project">
-        <h3 class="project-title tc pt3 underline-hover">
-          <span class="project-title-text">{{ project.title }}</span>
-        </h3>
-        <div class="project-date tc">{{ project.date }}</div>
-        <div class="tags tc">
-          {% for tag in project.tags %}
-          <span>{{ tag }}</span>
-          {% endfor %}
+      <div id="{{ project.id }}" class="project pointer relative mb4 mh4">
+        <div class="project-info absolute w-100">
+          <h3 class="project-title tc pt3 ma0 flex items-center justify-center">
+            <span class="project-title-text blue-darker underline-hover lh-copy">{{ project.title }}</span>
+            <div class="project-date tc f5 lh-copy">&nbsp;&mdash; {{ project.date }}</div>
+          </h3>
+          <div class="tags tc pb2">
+            {% for tag in project.tags %}
+              <span data-tagname="{{ tag | lower }}" class="filter-tag blue-darker underline-hover">{{ tag }}</span>{% if not loop.last %}<span>, </span>{% endif %}
+            {% endfor %}
+          </div>
         </div>
-        <div class="image-container center dim">
-          <img src="{{ project.image }}" />
+        <div class="image-container center hover-shadow">
+          <img class="db" src="{{ project.image }}" />
         </div>
       </div>
       {% else %}

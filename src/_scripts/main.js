@@ -45,10 +45,12 @@ $(() => {
   $('.portfolio-container .project-title-text, .portfolio-container .image-container').click(function(){
     var id = $(this).parents('.project').attr('id')
     $('#modal-' + id).show()
+    $('body').addClass('modal-open')
   })
 
   $('.modal-overlay').click(function(){
     $('.modal-container').hide()
+    $('body').removeClass('modal-open')
   })
 
 

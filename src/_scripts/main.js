@@ -35,9 +35,9 @@ $(() => {
     })
   }
 
-  // lightbox.option({
-  //   'wrapAround': true
-  // })
+  lightbox.option({
+    'wrapAround': true
+  })
 
 
   // Modal functionality starts here
@@ -53,13 +53,25 @@ $(() => {
 
 
   // Filtering portfolio
+  const filterableTags = ['residential', 'bath', 'kitchen', 'basement', 'exterior', 'deck']
+
   $(document).ready(function() {
     if (window.location.pathname === '/portfolio/') {
-      filterProjects(window.location.hash.substring(1))
+      if (filterableTags.some(tag => tag === window.location.hash.substring(1))) {
+        filterProjects(window.location.hash.substring(1))
+      } else {
+        window.location.hash = ''
+        $('#all-projects').addClass('active-tag')
+      }
     }
   })
 
-  $('.filter-tag').click(function(event) {
+  $('#all-projects').click(function() {
+    window.location.hash = ''
+    $('.project').show()
+  })
+
+  $('.filter-tag, .project-filter.clickable').click(function(event) {
     event.preventDefault()
     const filteringTag = $(this).data('tagname')
     window.location.hash = `#${filteringTag}`
@@ -69,7 +81,7 @@ $(() => {
   const filterProjects = function (clicked) {
     $('.project').hide()
     $('.active-tag').removeClass('active-tag')
-    $(`#${clicked}`).addClass('active-tag')
+    $(`.project-filter[data-tagname="${clicked}"]`).addClass('active-tag')
     $('.project').filter(`.${clicked}`).show()
   }
 

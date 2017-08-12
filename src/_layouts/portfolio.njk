@@ -7,8 +7,9 @@
       My projects span a variety of different types. Click on one of the tags to filter my portfolio!
     </p>
     <div class="filtering-tags mw7 center flex justify-center">
+      <div id="all-projects" class="project-filter underline-hover mh3 pointer f4">All</div>
       {% for tag in site.data.config.tags %}
-      <div id="{{ tag | lower}}" class="project-filter underline-hover mh3 pointer f4">{{ tag }}</div>
+      <div data-tagname="{{ tag | lower }}" class="project-filter clickable underline-hover mh3 pointer f4">{{ tag }}</div>
       {% endfor %}
     </div>
     <div class="portfolio-container flex flex-wrap justify-center pb4 pt4">

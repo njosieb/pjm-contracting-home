@@ -68,6 +68,8 @@ $(() => {
 
   const filterProjects = function (clicked) {
     $('.project').hide()
+    $('.active-tag').removeClass('active-tag')
+    $(`#${clicked}`).addClass('active-tag')
     $('.project').filter(`.${clicked}`).show()
   }
 

@@ -17,6 +17,20 @@ main.portfolio {
   background-color: fade(@grey-lightest, 80%);
 }
 
+.project-filter {
+  color: @offBlack;
+  font-weight: 300;
+
+  &:hover {
+    color: @green-color;
+  }
+
+  &.active-tag {
+    font-weight: 700;
+    color: @blue-darker;
+  }
+}
+
 .portfolio-header {
   background-image: url(/images/portfolio/klapmeyer/klapmeyer_1.jpg);
   background-size: cover;

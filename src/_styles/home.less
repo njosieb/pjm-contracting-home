@@ -37,10 +37,6 @@
   }
 }
 
-#top-splash {
-  // background-image: url(denver-kitchen-remodel.jpg);
-}
-
 .centered-quotations {
   text-align: center;
   font-size: 1.4rem;
@@ -97,6 +93,22 @@
 
 }
 
+.portfolio-filter {
+
+  img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  h3 {
+    top: 50%;
+    margin-top: -28px;
+    background-color: fade(@grey-lightest, 80%);
+  }
+}
+
 .action-button {
   display: inline-block;
   text-align: center;
@@ -104,7 +116,6 @@
   background-color: @blue-darker;
   color: @white;
   line-height: 1.5;
-  font-weight: 500;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
   padding: .3rem 3rem;
   border-radius: .25rem;
@@ -114,16 +125,6 @@
   border: none;
   outline: none;
   -webkit-appearance: none;
-}
-
-#about-us {
-  position: relative;
-  text-align: center;
-}
-
-#contact-us {
-  position: relative;
-  text-align: center;
 }
 
 .parent {

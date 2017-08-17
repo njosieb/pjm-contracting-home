@@ -81,7 +81,7 @@
       "depends": "jquery:jQuery"
     },
     "lightbox": {
-      "exports": null,
+      "exports": "lightbox",
       "depends": "jquery:jQuery"
     }
   },

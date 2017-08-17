@@ -1,86 +1,80 @@
-<div id="top-splash" class="transparent-section">
+<section id="top-splash" class="transparent-section">
   <div class="parallax">
-    <div class="parallax-image" style="background-image: url(/images/portfolio/painter/painter_1.jpg);">
+    <div class="parallax-image" style="background-image: url(/images/portfolio/painter/painter_1.jpg);"></div>
+  </div>
+  <div class="hero-container pt5 pb5">
+    <div class="image-container">
+      <img id="logo-background" src="/images/9ad66e5c4d_Logo-01.png">
+    </div>
+    <div id="site-slogan">
+      <h3 class="tc white pv4">{{ site.data.config.siteSlogan }}</h3>
+      <a href="/#contact" class="action-button f3 pb3 fw7">Contact Us!</a>
     </div>
   </div>
-</div>
-<div class="image-container">
-  <img id="logo-background" src="/images/9ad66e5c4d_Logo-01.png">
-</div>
-<div id="site-slogan">
-  <h3 class="tc white">For All Your Home & Remodel Needs!</h3>
-  <a class="action-button f3">Contact Us!</a>
-</div>
-<div id="about-us" class="bg-green pa5 white">
-  <div class="tl">
-  <h2 class="white tc">About Us</h2>
-    <p>Everything is awesome! Everything is cool when you're part of a team! Everything is awesome, everything is cool when your part of a team
-    Everything is awesome, when you're living out a dream.
-    </p>
-    <p>Everything is better when we stick together
-    Some have said you and I are gonna win forever?
-    Lets party forever
-    We're the same unlike you, you're like me we're all working in harmony
-    </p>
-    <p>
-    Everything is awesome, everything is cool when your part of a team
-    Everything is awesome, when you're living out a dream
-    </p>
-    <p>
-    Woo! 3, 2, 1, go!
-    Have you heard the news? Everyone's talkin'
-    Life is good 'cause everything awesome
-    Lost my job, there's a new opportunity
-    More free time for my awesome community
-    I feel more awesome than an awesome possum
-    Dip my body in chocolate frostin'
-    Three years later wash off the frostin'
-    Smellin' like a blossom, everything is awesome
-    Stepped in mud, got new brown shoes
-    It's awesome to win and it's awesome to lose
-    </p>
-    <p>
-    Everything is better when we stick together
-    Side by side, you and I gonna win forever?
-    Let's party forever
-    We're the same unlike you, you're like me we're all working in harmony
-    </p>
-    <p>
-    Everything is awesome, everything is cool when your part of a team
-    Everything is awesome, when you're living out a dream
-    </p>
-    <p>
-    Blue skies, bouncy springs, we just named a few awesome things
-    A Nobel prize, a piece of string
-    You know what's awesome? Everything!
-    Dogs with fleas, allergies
-    A book of Greek antiquities
-    Brand new pants, a very old vest
-    Awesome items are the best
-    Trees, (frogs), clogs, they're awesome
-    Rocks, clocks, and socks, they're awesome
-    Figs, and jigs, and twigs, that's awesome
-    Everything you see or think or say is awesome
-    </p>
-    <p>
-    Everything is awesome, everything is cool when your part of a team
-    Everything is awesome, when you're living out a dream.
-    </p>
+</section>
+<section id="about-us" class="relative pv4 bg-white">
+  <div class="mw6 center">
+    <h2 class="off-black">About Us</h2>
+    <!-- TODO insert stuff about him here -->
+    <p>Operating in the St. Louis and Kansas City areas, Peter McGaughey is the handyman for all residential and commercial needs.</p>
   </div>
-</div>
-<div class="bg-white green overflow-auto pa5" id="residential">
-  <h2 class="tc">Residential</h2>
-  <ul class="flex w-100 justify-center ml0 pl0">
-    <li class="ml3">Interior</li>
-    <li class="ml4">Bath</li>
-    <li class="ml4">Kitchen</li>
-    <li class="ml4">Basement</li>
-    <li class="ml4">Exterior</li>
-    <li class="ml4">Deck</li>
-  </ul>
-</div>
-<div class="white bg-green pa5" id="contact-us">
-  <h2>Contact Us</h2>
-  <p>12345 Hire Us Today Drive</p>
-  <p>Email Us Today at <a href="mailto:pjm966@gmail.com">pjm966@gmail.com</a></p>
-</div>
+  <div class="awesome-icons mw7 center flex justify-around blue-darker pv5">
+    <i class="fa fa-home f-5"></i>
+    <i class="fa fa-bath f-5"></i>
+    <i class="fa fa-handshake-o f-5"></i>
+    <i class="fa fa-cutlery f-5"></i>
+    <i class="fa fa-building f-5"></i>
+  </div>
+</section>
+<section id="work" class="relative white bg-green overflow-auto pv4" id="residential">
+  <div class="">
+    <h2 class="mw6 center pb2">What I Do</h2>
+    <p class="mw6 center pb3">Click on any of these to see my portfolio</p>
+    <div class="mw7 center flex flex-wrap w-100 justify-center ml0 pl0">
+    <!-- TODO picture boxes that filter -->
+      <div class="portfolio-filter overflow-hidden mh3 mb4 relative pointer hover-shadow">
+        <a class="db" href="/portfolio#interior">
+          <img class="db" src="/images/portfolio/fendler/fendler_1.jpg" />
+          <h3 class="absolute w-100 tc blue-darker">Interior</h3>
+        </a>
+      </div>
+      <div class="portfolio-filter overflow-hidden mh3 mb4 relative pointer hover-shadow">
+        <a class="db" href="/portfolio#bath">
+          <img class="db" src="/images/portfolio/brady_gilmore/brady_gilmore_8.jpg" />
+          <h3 class="absolute w-100 tc blue-darker">Bath</h3>
+        </a>
+      </div>
+      <div class="portfolio-filter overflow-hidden mh3 mb4 relative pointer hover-shadow">
+        <a class="db" href="/portfolio#kitchen">
+          <img class="db" src="/images/portfolio/fendler/fendler_4.jpg" />
+          <h3 class="absolute w-100 tc blue-darker">Kitchen</h3>
+        </a>
+      </div>
+      <div class="portfolio-filter overflow-hidden mh3 mb4 relative pointer hover-shadow">
+        <a class="db" href="/portfolio#basement">
+          <img class="db" src="/images/portfolio/teahan/teahan_4.jpg" />
+          <h3 class="absolute w-100 tc blue-darker">Basement</h3>
+        </a>
+      </div>
+      <div class="portfolio-filter overflow-hidden mh3 mb4 relative pointer hover-shadow">
+        <a class="db" href="/portfolio#exterior">
+          <img class="db" src="/images/portfolio/mach_deck/mach_deck_1.jpg" />
+          <h3 class="absolute w-100 tc blue-darker">Exterior</h3>
+        </a>
+      </div>
+      <div class="portfolio-filter overflow-hidden mh3 mb4 relative pointer hover-shadow">
+        <a class="db" href="/portfolio#deck">
+          <img class="db" src="/images/portfolio/klapmeyer/klapmeyer_1.jpg" />
+          <h3 class="absolute w-100 tc blue-darker">Deck</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="relative overflow-auto pv4 bg-white" id="contact-us">
+  <div class="mw6 center">
+    <h2>Contact Us</h2>
+    <p>12345 Hire Us Today Drive</p>
+    <p>Email Us Today at <a class="blue-darker underline" href="mailto:pjm966@gmail.com">pjm966@gmail.com</a></p>
+  </div>
+</section>

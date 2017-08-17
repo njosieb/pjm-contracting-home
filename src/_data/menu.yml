@@ -7,8 +7,8 @@
   route: '/#about-us'
   description: 'About Us button'
 
-- label: 'Residential'
-  route: '/#residential'
+- label: 'What I Do'
+  route: '/#work'
   description: 'Residential button'
 
 - label: 'Contact Us'

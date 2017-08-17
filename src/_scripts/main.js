@@ -4,7 +4,6 @@
 'use strict';
 
 import $ from 'jquery';
-import 'waypoints';
 import 'lightbox';
 
 $(() => {
@@ -29,16 +28,16 @@ $(() => {
   });
 
   if (window.location.pathname === '/' && jWindow.width() >= 600) {
-    // const topSection = $('#top-splash')
+    const topSection = $('#top-splash')
 
-    // jWindow.on('scroll', () => {
-    //   topSection.find('.parallax-image').css('transform', `translate3d(0, ${jWindow.scrollTop() * -.3}px, 0)`)
-    // })
+    jWindow.on('scroll', function() {
+      topSection.find('.parallax-image').css('transform', `translate3d(0, ${jWindow.scrollTop() * -.3}px, 0)`)
+    })
   }
 
-  // lightbox.option({
-  //   'wrapAround': true
-  // })
+  lightbox.option({
+    'wrapAround': true
+  })
 
 
   // Modal functionality starts here
@@ -46,10 +45,46 @@ $(() => {
   $('.portfolio-container .project-title-text, .portfolio-container .image-container').click(function(){
     var id = $(this).parents('.project').attr('id')
     $('#modal-' + id).show()
+    $('body').addClass('modal-open')
   })
 
   $('.modal-overlay').click(function(){
     $('.modal-container').hide()
+    $('body').removeClass('modal-open')
   })
+
+
+  // Filtering portfolio
+  const filterableTags = ['residential', 'bath', 'kitchen', 'basement', 'exterior', 'deck']
+
+  $(document).ready(function() {
+    if (window.location.pathname === '/portfolio/') {
+      if (filterableTags.some(tag => tag === window.location.hash.substring(1))) {
+        filterProjects(window.location.hash.substring(1))
+      } else {
+        window.location.hash = ''
+        $('#all-projects').addClass('active-tag')
+      }
+    }
+  })
+
+  $('#all-projects').click(function() {
+    window.location.hash = ''
+    $('.project').show()
+  })
+
+  $('.filter-tag, .project-filter.clickable').click(function(event) {
+    event.preventDefault()
+    const filteringTag = $(this).data('tagname')
+    window.location.hash = `#${filteringTag}`
+    filterProjects($(this).data('tagname'))
+  })
+
+  const filterProjects = function (clicked) {
+    $('.project').hide()
+    $('.active-tag').removeClass('active-tag')
+    $(`.project-filter[data-tagname="${clicked}"]`).addClass('active-tag')
+    $('.project').filter(`.${clicked}`).show()
+  }
 
 });
